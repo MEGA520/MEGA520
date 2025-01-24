@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>U9.com</title>
+    <style>
+        body {
+            background-image: url('/Photo/BK4.jpg'); /* 背景图片 */
+            background-size: cover; /* 背景图片覆盖整个页面 */
+            background-position: center; /* 背景图片居中 */
+            background-attachment: fixed; /* 背景固定 */
+        }
+    
+        img {
+            margin: 50px auto 0px; /* 上下边距50px，水平居中 */
+            display: block; /* 让图片独占一行 */
+            max-width: 30%; /* 图片宽度最多为容器的100% */
+            height: auto; /* 高度自动适应宽度，保持比例 */
+        }
+
+        button {
+            background-color: #881016; /* 背景色 */
+            color: white; /* 文本颜色 */
+            padding: 15px 32px; /* 内边距 */
+            font-size: 25px; /* 字体大小 */
+            border: 0none; /* 去掉边框 */
+            border-radius: 5px; /* 圆角 */
+            cursor: pointer; /* 鼠标悬停时显示为手指形状 */
+            display: block; /* 按钮独占一行 */
+            margin: 10px auto; /* 上下边距10px，水平居中 */
+            width: 400px; /* 设置按钮宽度 */
+            height: 60px; /* 设置按钮高度 */
+            background-size: 100% 100%; /* 设置背景图片的大小（宽度和高度100%） */
+            
+
+        }
+
+        button:hover {
+            background-color: #f73131; /* 悬停时背景色变化 */
+        }
+    </style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U9.com</title>
+    <script>
+        // 延迟跳转的函数
+        function delayedRedirectToRegister() {
+            setTimeout(function() {
+                window.location.href = "Register.html"; // 跳转到 B.html
+            }, 0); // 延迟 0 秒（0 毫秒）
+        }
+
+        function delayedRedirectToLogin() {
+            setTimeout(function() {
+                window.location.href = "Login.html"; // 跳转到 C.html
+            }, 0); // 延迟 0 秒（0 毫秒）
+        }
+    </script>
+</head>
+<body>
+    <img src="/Photo/U9.png" alt="U9 Logo">
+    <button onclick="delayedRedirectToLogin()">Login</button>
+    <button onclick="delayedRedirectToRegister()">Register</button>
+
+</body>
+</html>
